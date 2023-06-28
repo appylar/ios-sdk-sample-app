@@ -1,0 +1,11 @@
+framework module Appylar {
+  umbrella header "Appylar.h"
+
+  export *
+  module * { export * }
+}
+
+module Appylar.Swift {
+  header "Appylar-Swift.h"
+  requires objc
+}

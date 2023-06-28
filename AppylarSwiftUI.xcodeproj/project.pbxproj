@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7943F2C2A432BCC00EC74B3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7943F2B2A432BCC00EC74B3 /* AddViewController.swift */; };
+		ED0FBDE72A4C657400032584 /* Appylar.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0FBDE52A4C60C700032584 /* Appylar.xcframework */; };
+		ED0FBDE82A4C657400032584 /* Appylar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED0FBDE52A4C60C700032584 /* Appylar.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ED276F022A41742C0038B0C8 /* AppylarDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F012A41742C0038B0C8 /* AppylarDemoApp.swift */; };
+		ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F032A41742C0038B0C8 /* ContentView.swift */; };
+		ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED276F052A41742F0038B0C8 /* Assets.xcassets */; };
+		ED276F092A41742F0038B0C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED276F082A41742F0038B0C8 /* Preview Assets.xcassets */; };
+		ED276F0B2A41742F0038B0C8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F0A2A41742F0038B0C8 /* Persistence.swift */; };
+		ED276F0E2A41742F0038B0C8 /* AppylarDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED276F0C2A41742F0038B0C8 /* AppylarDemo.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7809F762A4B1FA00010E1DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED0FBDE82A4C657400032584 /* Appylar.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B7943F2B2A432BCC00EC74B3 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		ED0FBDE52A4C60C700032584 /* Appylar.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Appylar.xcframework; sourceTree = "<group>"; };
+		ED276EFE2A41742C0038B0C8 /* AppylarSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppylarSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED276F012A41742C0038B0C8 /* AppylarDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppylarDemoApp.swift; sourceTree = "<group>"; };
+		ED276F032A41742C0038B0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED276F052A41742F0038B0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED276F082A41742F0038B0C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED276F0A2A41742F0038B0C8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		ED276F0D2A41742F0038B0C8 /* AppylarDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppylarDemo.xcdatamodel; sourceTree = "<group>"; };
+		EDF1603C2A49D8B300499681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED276EFB2A41742C0038B0C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0FBDE72A4C657400032584 /* Appylar.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B772652F2A45B615003838DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED0FBDE52A4C60C700032584 /* Appylar.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED276EF52A41742C0038B0C8 = {
+			isa = PBXGroup;
+			children = (
+				ED276F002A41742C0038B0C8 /* AppylarDemo */,
+				ED276EFF2A41742C0038B0C8 /* Products */,
+				B772652F2A45B615003838DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ED276EFF2A41742C0038B0C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED276EFE2A41742C0038B0C8 /* AppylarSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED276F002A41742C0038B0C8 /* AppylarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EDF1603C2A49D8B300499681 /* Info.plist */,
+				ED276F012A41742C0038B0C8 /* AppylarDemoApp.swift */,
+				ED276F032A41742C0038B0C8 /* ContentView.swift */,
+				B7943F2B2A432BCC00EC74B3 /* AddViewController.swift */,
+				ED276F052A41742F0038B0C8 /* Assets.xcassets */,
+				ED276F0A2A41742F0038B0C8 /* Persistence.swift */,
+				ED276F0C2A41742F0038B0C8 /* AppylarDemo.xcdatamodeld */,
+				ED276F072A41742F0038B0C8 /* Preview Content */,
+			);
+			path = AppylarDemo;
+			sourceTree = "<group>";
+		};
+		ED276F072A41742F0038B0C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED276F082A41742F0038B0C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED276EFD2A41742C0038B0C8 /* AppylarSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED276F112A41742F0038B0C8 /* Build configuration list for PBXNativeTarget "AppylarSwiftUI" */;
+			buildPhases = (
+				ED276EFA2A41742C0038B0C8 /* Sources */,
+				ED276EFB2A41742C0038B0C8 /* Frameworks */,
+				ED276EFC2A41742C0038B0C8 /* Resources */,
+				B7809F762A4B1FA00010E1DC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppylarSwiftUI;
+			productName = AppylarDemo;
+			productReference = ED276EFE2A41742C0038B0C8 /* AppylarSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED276EF62A41742C0038B0C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					ED276EFD2A41742C0038B0C8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = ED276EF92A41742C0038B0C8 /* Build configuration list for PBXProject "AppylarSwiftUI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED276EF52A41742C0038B0C8;
+			productRefGroup = ED276EFF2A41742C0038B0C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED276EFD2A41742C0038B0C8 /* AppylarSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED276EFC2A41742C0038B0C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED276F092A41742F0038B0C8 /* Preview Assets.xcassets in Resources */,
+				ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED276EFA2A41742C0038B0C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED276F0B2A41742F0038B0C8 /* Persistence.swift in Sources */,
+				ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */,
+				B7943F2C2A432BCC00EC74B3 /* AddViewController.swift in Sources */,
+				ED276F0E2A41742F0038B0C8 /* AppylarDemo.xcdatamodeld in Sources */,
+				ED276F022A41742C0038B0C8 /* AppylarDemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED276F0F2A41742F0038B0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED276F102A41742F0038B0C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED276F122A41742F0038B0C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppylarDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = AU5FFN8K99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppylarDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylar.io;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED276F132A41742F0038B0C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppylarDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = AU5FFN8K99;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppylarDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.appylar.io;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED276EF92A41742C0038B0C8 /* Build configuration list for PBXProject "AppylarSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED276F0F2A41742F0038B0C8 /* Debug */,
+				ED276F102A41742F0038B0C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED276F112A41742F0038B0C8 /* Build configuration list for PBXNativeTarget "AppylarSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED276F122A41742F0038B0C8 /* Debug */,
+				ED276F132A41742F0038B0C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ED276F0C2A41742F0038B0C8 /* AppylarDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ED276F0D2A41742F0038B0C8 /* AppylarDemo.xcdatamodel */,
+			);
+			currentVersion = ED276F0D2A41742F0038B0C8 /* AppylarDemo.xcdatamodel */;
+			path = AppylarDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ED276EF62A41742C0038B0C8 /* Project object */;
+}

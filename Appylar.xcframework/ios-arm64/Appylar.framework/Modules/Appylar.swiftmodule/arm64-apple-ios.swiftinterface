@@ -1,0 +1,98 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Appylar
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import Appylar
+import Foundation
+import SafariServices
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class InterstitialViewController : UIKit.UIViewController, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public static func canShowAd() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func showAd(placement: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Appylar.InterstitialViewController : WebKit.WKScriptMessageHandler, SafariServices.SFSafariViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+}
+@objc @_inheritsConvenienceInitializers public class Advertisement : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class AppylarManager {
+  public static var supportedOrientation: UIKit.UIInterfaceOrientationMask
+  public static func setEventListener(delegate: Appylar.AppylarDelegate, bannerDelegate: Appylar.BannerViewDelegate, interstitialDelegate: Appylar.InterstitialDelegate)
+  public static func Init(appKey: Swift.String, adTypes: [Appylar.AdType], testMode: Swift.Bool)
+  public static func setParameters(dict: [Swift.String : [Swift.String]?])
+  @objc deinit
+}
+public enum AdOrientation : Swift.String {
+  case portrait
+  case landscape
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Session {
+  public static var adTypes: [Appylar.AdType]
+  public static var orientations: [Appylar.AdOrientation]
+  public static var printLog: Swift.Bool
+  public static var isInterstitialShown: Swift.Bool
+  @objc deinit
+}
+public enum AdType : Swift.String {
+  case banner
+  case interstitial
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol AppylarDelegate {
+  func onInitialized()
+  func onError(error: Swift.String)
+}
+public protocol BannerViewDelegate {
+  func onNoBanner()
+  func onBannerShown()
+}
+public protocol InterstitialDelegate {
+  func onNoInterstitial()
+  func onInterstitialShown()
+  func onInterstitialClosed()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView, SafariServices.SFSafariViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) public func canShowAd() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func showAd(placement: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
+  @_Concurrency.MainActor(unsafe) public func hideAd()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Appylar.BannerView : WebKit.WKUIDelegate, WebKit.WKNavigationDelegate, WebKit.WKScriptMessageHandler {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+}
+extension Appylar.AdOrientation : Swift.Equatable {}
+extension Appylar.AdOrientation : Swift.Hashable {}
+extension Appylar.AdOrientation : Swift.RawRepresentable {}
+extension Appylar.AdType : Swift.Equatable {}
+extension Appylar.AdType : Swift.Hashable {}
+extension Appylar.AdType : Swift.RawRepresentable {}
