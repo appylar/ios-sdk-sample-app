@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84478EE32A4C70890067EBCC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AppylarSwiftUI/Info.plist; sourceTree = "<group>"; };
 		B7943F2B2A432BCC00EC74B3 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		ED0FBDE52A4C60C700032584 /* Appylar.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Appylar.xcframework; sourceTree = "<group>"; };
 		ED276EFE2A41742C0038B0C8 /* AppylarSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppylarSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +43,6 @@
 		ED276F082A41742F0038B0C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED276F0A2A41742F0038B0C8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		ED276F0D2A41742F0038B0C8 /* AppylarDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppylarDemo.xcdatamodel; sourceTree = "<group>"; };
-		EDF1603C2A49D8B300499681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,8 @@
 		ED276EF52A41742C0038B0C8 = {
 			isa = PBXGroup;
 			children = (
-				ED276F002A41742C0038B0C8 /* AppylarDemo */,
+				84478EE32A4C70890067EBCC /* Info.plist */,
+				ED276F002A41742C0038B0C8 /* AppylarSwiftUI */,
 				ED276EFF2A41742C0038B0C8 /* Products */,
 				B772652F2A45B615003838DD /* Frameworks */,
 			);
@@ -82,10 +83,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ED276F002A41742C0038B0C8 /* AppylarDemo */ = {
+		ED276F002A41742C0038B0C8 /* AppylarSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				EDF1603C2A49D8B300499681 /* Info.plist */,
 				ED276F012A41742C0038B0C8 /* AppylarDemoApp.swift */,
 				ED276F032A41742C0038B0C8 /* ContentView.swift */,
 				B7943F2B2A432BCC00EC74B3 /* AddViewController.swift */,
@@ -94,7 +94,7 @@
 				ED276F0C2A41742F0038B0C8 /* AppylarDemo.xcdatamodeld */,
 				ED276F072A41742F0038B0C8 /* Preview Content */,
 			);
-			path = AppylarDemo;
+			path = AppylarSwiftUI;
 			sourceTree = "<group>";
 		};
 		ED276F072A41742F0038B0C8 /* Preview Content */ = {
@@ -308,11 +308,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppylarDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppylarSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = AU5FFN8K99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppylarDemo/Info.plist;
+				INFOPLIST_FILE = AppylarSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,11 +339,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AppylarDemo/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AppylarSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = AU5FFN8K99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppylarDemo/Info.plist;
+				INFOPLIST_FILE = AppylarSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
