@@ -1,8 +1,8 @@
 //
 //  Persistence.swift
-//  AppylarDemo
+//  AppylarSwiftUI
 //
-//  Created by Ayush Bharadwaj on 20/06/23.
+//  Created by @5Exceptions on 20/06/23.
 //
 
 import CoreData

@@ -1,26 +1,26 @@
 //
-//  AppylarDemoApp.swift
-//  AppylarDemo
+//  AppylarSwiftUI.swift
+//  AppylarSwiftUI
 //
-//  Created by Ayush Bharadwaj on 20/06/23.
+//  Created by @5Exceptions on 20/06/23.
 //
 
 import SwiftUI
 import Appylar
 @main
 struct AppylarDemoApp: App {
-    let persistenceController = PersistenceController.shared
+   // let persistenceController = PersistenceController.shared
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    
     init() {
         AppylarManager.setEventListener(delegate: self, bannerDelegate: self, interstitialDelegate: self)
         AppylarManager.Init(appKey: "OwDmESooYtY2kNPotIuhiQ", adTypes: [.interstitial, .banner], testMode: true)
-        }
+    }
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
