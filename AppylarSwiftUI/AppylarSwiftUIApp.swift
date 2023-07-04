@@ -9,9 +9,7 @@ import SwiftUI
 import Appylar
 @main
 struct AppylarDemoApp: App {
-    let persistenceController = PersistenceController.shared
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    
     init() {
         AppylarManager.setEventListener(delegate: self, bannerDelegate: self, interstitialDelegate: self)
         AppylarManager.Init(appKey: "OwDmESooYtY2kNPotIuhiQ", adTypes: [.interstitial, .banner], testMode: true)
@@ -20,7 +18,6 @@ struct AppylarDemoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
