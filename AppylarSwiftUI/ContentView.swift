@@ -43,20 +43,17 @@ struct ContentView: View {
                 
             } else {
                 VStack(spacing: 30) {
-                    
-                    BannerViewWrapper(bannerView: bannerView)
-                        .frame(height: bannerHeight)
-                        .ignoresSafeArea()
-                    
+                    Spacer()
                     Image("logo_svg")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 80.0)
-                        .padding(.bottom, 10)
+                        .padding()
                     
                     Text("Appylar Sample App")
                         .font(.largeTitle)
                         .foregroundColor(Color.init(red: 0.16, green: 0.21, blue: 0.26))
+                        .padding()
                     
                     Spacer()
                     
@@ -76,20 +73,26 @@ struct ContentView: View {
                     
                     Button(action: {
                         if InterstitialViewController.canShowAd(){
-                            DispatchQueue.main.async {
+                    //        DispatchQueue.main.async {
                                 isInterstitialShown = true
-                            }
+                     //       }
                         }
                     }) {
                         createButtonStyle(title: "Show Interstitial")
                     }
                     
                     Spacer()
+                    
+                    BannerViewWrapper(bannerView: bannerView)
+                        .frame(height: 50)
+                        .ignoresSafeArea()
+                        
                 }
                 .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
                     currentOrientation = UIDevice.current.orientation
                 }
-                .padding(.vertical, 20)
+                .frame(maxWidth: .infinity)
+                .ignoresSafeArea()
             }
         }
         
@@ -132,6 +135,25 @@ extension Notification.Name {
     static let interstitialClosed = Notification.Name("interstitialClosed")
 }
 
+class AdViewController:InterstitialViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+      //  if InterstitialViewController.canShowAd(){
+            self.showAd()
+      //  }
+    }
+    
+    override func viewDidLayoutSubviews() {
+        if Session.isInterstitialShown == false {
+            NotificationCenter.default.post(name: .interstitialClosed, object: nil)
+        }
+    }
+    
+  //  override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+  //      super.viewWillTransition(to: size, with: coordinator)
+  //  }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

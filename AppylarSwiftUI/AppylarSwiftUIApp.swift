@@ -42,7 +42,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         if Session.isInterstitialShown{
             return AppDelegate.orientationLock
-        }else{
+        } else {
             return AppylarManager.supportedOrientation
         }
         
