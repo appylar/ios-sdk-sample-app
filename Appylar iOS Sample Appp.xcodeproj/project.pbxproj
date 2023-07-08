@@ -126,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED276EF92A41742C0038B0C8 /* Build configuration list for PBXProject "Appylar iOS Sample App" */;
+			buildConfigurationList = ED276EF92A41742C0038B0C8 /* Build configuration list for PBXProject "Appylar iOS Sample Appp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -348,7 +348,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED276EF92A41742C0038B0C8 /* Build configuration list for PBXProject "Appylar iOS Sample App" */ = {
+		ED276EF92A41742C0038B0C8 /* Build configuration list for PBXProject "Appylar iOS Sample Appp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED276F0F2A41742F0038B0C8 /* Debug */,
