@@ -1,15 +1,7 @@
-//
-//  AddViewController.swift
-//  AppylarSwiftUI
-//
-//  Created by @5Exceptions on 20/06/23.
-//
-
 import UIKit
 import Appylar
 
-class AddViewController:InterstitialViewController {
-    
+class AdViewController:InterstitialViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

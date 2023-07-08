@@ -1,14 +1,5 @@
-//
-//  ContentView.swift
-//  AppylarSwiftUI
-//
-//  Created by @5Exceptions on 20/06/23.
-//
-
 import SwiftUI
 import Appylar
-
-
 
 struct ContentView: View {
     @State private var bannerView = BannerView()
@@ -39,7 +30,7 @@ struct ContentView: View {
                             }else if currentOrientation == .landscapeRight {
                                 AppDelegate.orientationLock = .landscapeLeft
                             }
-                        }else{
+                        } else {
                             AppDelegate.orientationLock = .portrait
                         }
                         
@@ -50,12 +41,22 @@ struct ContentView: View {
                         currentOrientation = UIDevice.current.orientation
                     }
                 
-            }else {
-                VStack(spacing: 20) {
+            } else {
+                VStack(spacing: 30) {
                     
                     BannerViewWrapper(bannerView: bannerView)
                         .frame(height: bannerHeight)
                         .ignoresSafeArea()
+                    
+                    Image("logo_svg")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 80.0)
+                        .padding(.bottom, 10)
+                    
+                    Text("Appylar Sample App")
+                        .font(.largeTitle)
+                        .foregroundColor(Color.init(red: 0.16, green: 0.21, blue: 0.26))
                     
                     Spacer()
                     
@@ -89,54 +90,48 @@ struct ContentView: View {
                     currentOrientation = UIDevice.current.orientation
                 }
                 .padding(.vertical, 20)
-                
-                
             }
         }
         
     }
     
     func createButtonStyle(title: String) -> some View {
-        return Text(title)
-            .frame(maxWidth: .infinity)
-            .frame(height: 10)
+        return Text(title.uppercased())
+            .frame(width: 200)
+            .frame(height: 15)
             .padding()
-            .background(Color.blue)
+            .background(Color.init(red: 0.46, green: 0.56, blue: 0.73))
             .foregroundColor(.white)
-            .cornerRadius(10)
+            .cornerRadius(8)
             .disabled(isInterstitialShown)
     }
-    
 }
 
 struct MyView: UIViewControllerRepresentable {
-    
-    typealias UIViewControllerType = AddViewController
-    
-    func makeUIViewController(context: Context) -> AddViewController {
-        
-        let vc = AddViewController()
+    typealias UIViewControllerType = AdViewController
+    func makeUIViewController(context: Context) -> AdViewController {
+        let vc = AdViewController()
         return vc
     }
-    
-    func updateUIViewController(_ uiViewController: AddViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: AdViewController, context: Context) {
     }
 }
 
+
 struct BannerViewWrapper: UIViewRepresentable {
     let bannerView: BannerView
-    
     func makeUIView(context: Context) -> UIView {
         bannerView
     }
-    
     func updateUIView(_ uiView: UIView, context: Context) {
     }
 }
 
+
 extension Notification.Name {
     static let interstitialClosed = Notification.Name("interstitialClosed")
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

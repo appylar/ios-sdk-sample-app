@@ -1,18 +1,15 @@
-//
-//  AppylarSwiftUI.swift
-//  AppylarSwiftUI
-//
-//  Created by @5Exceptions on 20/06/23.
-//
-
 import SwiftUI
 import Appylar
 @main
-struct AppylarDemoApp: App {
+struct AppylarSampleApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     init() {
         AppylarManager.setEventListener(delegate: self, bannerDelegate: self, interstitialDelegate: self)
-        AppylarManager.Init(appKey: "OwDmESooYtY2kNPotIuhiQ", adTypes: [.interstitial, .banner], testMode: true)
+        AppylarManager.Init(
+            appKey: "OwDmESooYtY2kNPotIuhiQ",
+            adTypes: [AdType.banner, AdType.interstitial],
+            testMode: true
+        )
     }
     
     var body: some Scene {
@@ -52,7 +49,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
-extension AppylarDemoApp: InterstitialDelegate {
+extension AppylarSampleApp: InterstitialDelegate {
     func onNoInterstitial() {
         print("onNoInterstitial()")
     }
@@ -66,7 +63,7 @@ extension AppylarDemoApp: InterstitialDelegate {
     }
 }
 
-extension AppylarDemoApp: BannerViewDelegate {
+extension AppylarSampleApp: BannerViewDelegate {
     func onNoBanner() {
         print("onNoBanner()")
     }
@@ -76,7 +73,7 @@ extension AppylarDemoApp: BannerViewDelegate {
     }
 }
 
-extension AppylarDemoApp: AppylarDelegate{
+extension AppylarSampleApp: AppylarDelegate{
     func onInitialized() {
         print("onInitialized")
     }
