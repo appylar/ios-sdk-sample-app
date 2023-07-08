@@ -44,11 +44,10 @@ struct ContentView: View {
             } else {
                 VStack(spacing: 30) {
                     Spacer()
-                    Image("logo_svg")
+                    Image("appylar_logo")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: 80.0)
-                        .padding()
+                        .frame(width: 40.0)
                     
                     Text("Appylar Sample App")
                         .font(.largeTitle)
