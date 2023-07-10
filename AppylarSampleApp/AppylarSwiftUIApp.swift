@@ -64,6 +64,10 @@ extension AppylarSampleApp: InterstitialDelegate {
 }
 
 extension AppylarSampleApp: BannerViewDelegate {
+    func onBannerShown(_ height: Int) {
+        print("onBannerShown()")
+    }
+    
     func onNoBanner() {
         print("onNoBanner()")
     }

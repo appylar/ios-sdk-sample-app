@@ -20,7 +20,6 @@ struct ContentView: View {
                     .frame(height: UIScreen.main.bounds.height)
                 
                 // SHOULD BE IN THE SDK, NOT IN THE APP CODE!
-
                     .onAppear{
                         if currentOrientation.isLandscape{
                             if currentOrientation == .landscapeLeft {
@@ -31,7 +30,6 @@ struct ContentView: View {
                         } else {
                             AppDelegate.orientationLock = .portrait
                         }
-                        
                     }
                     .onDisappear{
                         NotificationCenter.default.post(name: UIDevice.orientationDidChangeNotification, object: nil)
@@ -117,10 +115,12 @@ struct ContentView: View {
 
 struct MyView: UIViewControllerRepresentable {
     typealias UIViewControllerType = InterstitialView
+   
     func makeUIViewController(context: Context) -> InterstitialView {
         let vc = InterstitialView()
         return vc
     }
+    
     func updateUIViewController(_ uiViewController: InterstitialView, context: Context) {
     }
 }
