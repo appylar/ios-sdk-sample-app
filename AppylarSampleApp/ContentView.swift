@@ -5,7 +5,6 @@ struct ContentView: View {
     @State private var bannerView = BannerView()
     @State private var isInterstitialShown = false
     @State private var bannerHeight = 50.0
-    @State private var orientation = UIDeviceOrientation.unknown
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @State var currentOrientation = UIDevice.current.orientation
     var body: some View {
@@ -17,12 +16,11 @@ struct ContentView: View {
                         isInterstitialShown = false
                     }
                     .ignoresSafeArea(.all)
-                    .edgesIgnoringSafeArea(.all)
                     .frame(width: UIScreen.main.bounds.width)
                     .frame(height: UIScreen.main.bounds.height)
-                    .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                        orientation = UIDevice.current.orientation
-                    }
+                
+                // SHOULD BE IN THE SDK, NOT IN THE APP CODE!
+
                     .onAppear{
                         if currentOrientation.isLandscape{
                             if currentOrientation == .landscapeLeft {
@@ -40,58 +38,66 @@ struct ContentView: View {
                         AppDelegate.orientationLock = .all
                         currentOrientation = UIDevice.current.orientation
                     }
-                
+                /////////////////////////////////////////////
             } else {
-                VStack(spacing: 30) {
-                    Spacer()
-                    Image("appylar_logo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 40.0)
-                    
-                    Text("Appylar Sample App")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.init(red: 0.16, green: 0.21, blue: 0.26))
-                        .padding()
-                    
-                    Spacer()
-                    
-                    Button(action: {
-                        if BannerView().canShowAd(){
-                            bannerView.showAd()
+                
+                VStack() {
+                    ScrollView(showsIndicators: false){
+                        VStack(spacing: 25) {
+                            Spacer()
+                            Image("appylar_logo")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40.0)
+                                .padding(.top, 30.0)
+                            
+                            Text("Appylar Sample App")
+                                .font(.largeTitle)
+                                .foregroundColor(Color.init(red: 0.16, green: 0.21, blue: 0.26))
+                                .padding()
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                if BannerView().canShowAd(){
+                                    bannerView.showAd()
+                                }
+                            }) {
+                                createButtonStyle(title: "Show Banner")
+                            }
+                            
+                            Button(action: {
+                                bannerView.hideAd()
+                            }) {
+                                createButtonStyle(title: "Hide Banner")
+                            }
+                            
+                            Button(action: {
+                                if InterstitialViewController.canShowAd(){
+                                    //        DispatchQueue.main.async {
+                                    isInterstitialShown = true
+                                    //       }
+                                }
+                            }) {
+                                createButtonStyle(title: "Show Interstitial")
+                            }
+                            
+                            Spacer()
                         }
-                    }) {
-                        createButtonStyle(title: "Show Banner")
                     }
-                    
-                    Button(action: {
-                        bannerView.hideAd()
-                    }) {
-                        createButtonStyle(title: "Hide Banner")
-                    }
-                    
-                    Button(action: {
-                        if InterstitialViewController.canShowAd(){
-                    //        DispatchQueue.main.async {
-                                isInterstitialShown = true
-                     //       }
-                        }
-                    }) {
-                        createButtonStyle(title: "Show Interstitial")
-                    }
-                    
-                    Spacer()
-                    
                     BannerViewWrapper(bannerView: bannerView)
                         .frame(height: 50)
                         .ignoresSafeArea()
-                        
+                    
                 }
+                
+                // SHOULD BE IN THE SDK, NOT IN THE APP CODE!
                 .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
                     currentOrientation = UIDevice.current.orientation
                 }
+                ////////////////////////////////////
                 .frame(maxWidth: .infinity)
-                .ignoresSafeArea()
+                //.ignoresSafeArea()
             }
         }
         
@@ -110,12 +116,12 @@ struct ContentView: View {
 }
 
 struct MyView: UIViewControllerRepresentable {
-    typealias UIViewControllerType = AdViewController
-    func makeUIViewController(context: Context) -> AdViewController {
-        let vc = AdViewController()
+    typealias UIViewControllerType = InterstitialView
+    func makeUIViewController(context: Context) -> InterstitialView {
+        let vc = InterstitialView()
         return vc
     }
-    func updateUIViewController(_ uiViewController: AdViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: InterstitialView, context: Context) {
     }
 }
 
@@ -134,13 +140,12 @@ extension Notification.Name {
     static let interstitialClosed = Notification.Name("interstitialClosed")
 }
 
-class AdViewController:InterstitialViewController {
+// Show an interstitial on top of any other view class
+class InterstitialView:InterstitialViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      //  if InterstitialViewController.canShowAd(){
-            self.showAd()
-      //  }
+        self.showAd()
     }
     
     override func viewDidLayoutSubviews() {
@@ -148,10 +153,6 @@ class AdViewController:InterstitialViewController {
             NotificationCenter.default.post(name: .interstitialClosed, object: nil)
         }
     }
-    
-  //  override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-  //      super.viewWillTransition(to: size, with: coordinator)
-  //  }
 }
 
 struct ContentView_Previews: PreviewProvider {
