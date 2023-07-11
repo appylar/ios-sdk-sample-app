@@ -16,9 +16,10 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var supportedInterfaceOrientations: UIKit.UIInterfaceOrientationMask {
     @objc get
   }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public static func onViewAppear(currentOrientation: UIKit.UIDeviceOrientation) -> UIKit.UIInterfaceOrientationMask
+  @_Concurrency.MainActor(unsafe) public static func onViewDisappear() -> UIKit.UIInterfaceOrientationMask
   @_Concurrency.MainActor(unsafe) public static func canShowAd() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func canShowAdFromUnity()
   @_Concurrency.MainActor(unsafe) public func showAd(placement: Swift.String? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -32,6 +33,42 @@ extension Appylar.InterstitialViewController : WebKit.WKScriptMessageHandler, Sa
   @objc override dynamic public init()
   @objc deinit
 }
+@_cdecl("initialize")
+public func initialize(appkey: Swift.UnsafePointer<Swift.CChar>, adTypes: Swift.UnsafePointer<Swift.CChar>, testMode: Swift.Bool)
+@_cdecl("setParametersJSON")
+public func setParametersJSON(dict: Swift.UnsafePointer<Swift.CChar>)
+@_cdecl("canShowAdInterstitial")
+public func canShowAdInterstitial()
+@_cdecl("canShowAdBanner")
+public func canShowAdBanner()
+@_cdecl("showTopBanner")
+public func showTopBanner()
+@_cdecl("showBottomBanner")
+public func showBottomBanner()
+@_cdecl("showInterstitial")
+public func showInterstitial()
+@_cdecl("hideInterstitial")
+public func hideInterstitial()
+@_cdecl("hideBanner")
+public func hideBanner()
+@_cdecl("setOnInitialized")
+public func setOnInitialized(delegate: @convention(c) () -> Swift.Void)
+@_cdecl("setOnError")
+public func setOnError(delegate: @convention(c) (Swift.UnsafePointer<Swift.CChar>) -> Swift.Void)
+@_cdecl("canShowBannerAds")
+public func canShowBannerAds(delegate: @convention(c) (Swift.Bool) -> Swift.Void)
+@_cdecl("canShowInterstitialAds")
+public func canShowInterstitialAds(delegate: @convention(c) (Swift.Bool) -> Swift.Void)
+@_cdecl("setOnNoBanner")
+public func setOnNoBanner(delegate: @convention(c) () -> Swift.Void)
+@_cdecl("setOnBannerShown")
+public func setOnBannerShown(delegate: @convention(c) (Swift.Int) -> Swift.Void)
+@_cdecl("setOnNoInterstitial")
+public func setOnNoInterstitial(delegate: @convention(c) () -> Swift.Void)
+@_cdecl("setOnInterstitialClosed")
+public func setOnInterstitialClosed(delegate: @convention(c) () -> Swift.Void)
+@_cdecl("setOnInterstitialShown")
+public func setOnInterstitialShown(delegate: @convention(c) () -> Swift.Void)
 @_hasMissingDesignatedInitializers public class AppylarManager {
   public static var supportedOrientation: UIKit.UIInterfaceOrientationMask
   public static func setEventListener(delegate: Appylar.AppylarDelegate, bannerDelegate: Appylar.BannerViewDelegate, interstitialDelegate: Appylar.InterstitialDelegate)
@@ -64,13 +101,33 @@ public enum AdType : Swift.String {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class UnityHelper {
+  public static func showTopBanner()
+  public static func showBottomBanner()
+  public static func showInterstitial()
+  public static func hideInterstitial()
+  public static func hideBanner()
+  public static func showAlert(vc: UIKit.UIViewController, sender: Any?)
+  @objc deinit
+}
+extension Appylar.UnityHelper {
+  public static var onInitialized: (() -> Swift.Void)?
+  public static var onError: ((Swift.UnsafePointer<Swift.CChar>) -> Swift.Void)?
+  public static var onNoBanner: (() -> Swift.Void)?
+  public static var onBannerShown: ((Swift.Int) -> Swift.Void)?
+  public static var onNoInterstitial: (() -> Swift.Void)?
+  public static var onInterstitialClosed: (() -> Swift.Void)?
+  public static var onInterstitialShown: (() -> Swift.Void)?
+  public static var canShowBannerAds: ((Swift.Bool) -> Swift.Void)?
+  public static var canShowInterstitialAds: ((Swift.Bool) -> Swift.Void)?
+}
 public protocol AppylarDelegate {
   func onInitialized()
   func onError(error: Swift.String)
 }
 public protocol BannerViewDelegate {
   func onNoBanner()
-  func onBannerShown()
+  func onBannerShown(_ height: Swift.Int)
 }
 public protocol InterstitialDelegate {
   func onNoInterstitial()
@@ -79,6 +136,7 @@ public protocol InterstitialDelegate {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView, SafariServices.SFSafariViewControllerDelegate {
   @_Concurrency.MainActor(unsafe) public func canShowAd() -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func canShowAdFromUnity()
   @_Concurrency.MainActor(unsafe) public func showAd(placement: Swift.String? = nil)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToSuperview()
   @_Concurrency.MainActor(unsafe) public func hideAd()

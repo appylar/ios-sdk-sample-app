@@ -291,8 +291,6 @@ SWIFT_CLASS("_TtC7Appylar26InterstitialViewController")
 @interface InterstitialViewController : UIViewController <WKNavigationDelegate, WKUIDelegate>
 - (void)viewDidLoad;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -305,6 +303,60 @@ SWIFT_CLASS("_TtC7Appylar26InterstitialViewController")
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+
+SWIFT_EXTERN void canShowAdBanner(void);
+
+
+SWIFT_EXTERN void canShowAdInterstitial(void);
+
+
+SWIFT_EXTERN void canShowBannerAds(void (* _Nonnull delegate)(BOOL));
+
+
+SWIFT_EXTERN void canShowInterstitialAds(void (* _Nonnull delegate)(BOOL));
+
+
+SWIFT_EXTERN void hideBanner(void);
+
+
+SWIFT_EXTERN void hideInterstitial(void);
+
+
+SWIFT_EXTERN void initialize(char const * _Nonnull appkey, char const * _Nonnull adTypes, BOOL testMode);
+
+
+SWIFT_EXTERN void setOnBannerShown(void (* _Nonnull delegate)(NSInteger));
+
+
+SWIFT_EXTERN void setOnError(void (* _Nonnull delegate)(char const * _Nonnull));
+
+
+SWIFT_EXTERN void setOnInitialized(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialClosed(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialShown(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoBanner(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoInterstitial(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setParametersJSON(char const * _Nonnull dict);
+
+
+SWIFT_EXTERN void showBottomBanner(void);
+
+
+SWIFT_EXTERN void showInterstitial(void);
+
+
+SWIFT_EXTERN void showTopBanner(void);
 
 #endif
 #if defined(__cplusplus)
@@ -607,8 +659,6 @@ SWIFT_CLASS("_TtC7Appylar26InterstitialViewController")
 @interface InterstitialViewController : UIViewController <WKNavigationDelegate, WKUIDelegate>
 - (void)viewDidLoad;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewWillDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -621,6 +671,60 @@ SWIFT_CLASS("_TtC7Appylar26InterstitialViewController")
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+
+SWIFT_EXTERN void canShowAdBanner(void);
+
+
+SWIFT_EXTERN void canShowAdInterstitial(void);
+
+
+SWIFT_EXTERN void canShowBannerAds(void (* _Nonnull delegate)(BOOL));
+
+
+SWIFT_EXTERN void canShowInterstitialAds(void (* _Nonnull delegate)(BOOL));
+
+
+SWIFT_EXTERN void hideBanner(void);
+
+
+SWIFT_EXTERN void hideInterstitial(void);
+
+
+SWIFT_EXTERN void initialize(char const * _Nonnull appkey, char const * _Nonnull adTypes, BOOL testMode);
+
+
+SWIFT_EXTERN void setOnBannerShown(void (* _Nonnull delegate)(NSInteger));
+
+
+SWIFT_EXTERN void setOnError(void (* _Nonnull delegate)(char const * _Nonnull));
+
+
+SWIFT_EXTERN void setOnInitialized(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialClosed(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnInterstitialShown(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoBanner(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setOnNoInterstitial(void (* _Nonnull delegate)(void));
+
+
+SWIFT_EXTERN void setParametersJSON(char const * _Nonnull dict);
+
+
+SWIFT_EXTERN void showBottomBanner(void);
+
+
+SWIFT_EXTERN void showInterstitial(void);
+
+
+SWIFT_EXTERN void showTopBanner(void);
 
 #endif
 #if defined(__cplusplus)

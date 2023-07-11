@@ -6,7 +6,7 @@ struct ContentView: View {
     @State private var isInterstitialShown = false
     @State private var bannerHeight = 50.0
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @State var currentOrientation = UIDevice.current.orientation
+   @State var currentOrientation = UIDevice.current.orientation
     var body: some View {
         GeometryReader { geometry in
             if isInterstitialShown {
@@ -18,25 +18,6 @@ struct ContentView: View {
                     .ignoresSafeArea(.all)
                     .frame(width: UIScreen.main.bounds.width)
                     .frame(height: UIScreen.main.bounds.height)
-                
-                // SHOULD BE IN THE SDK, NOT IN THE APP CODE!
-                    .onAppear{
-                        if currentOrientation.isLandscape{
-                            if currentOrientation == .landscapeLeft {
-                                AppDelegate.orientationLock = .landscapeRight
-                            }else if currentOrientation == .landscapeRight {
-                                AppDelegate.orientationLock = .landscapeLeft
-                            }
-                        } else {
-                            AppDelegate.orientationLock = .portrait
-                        }
-                    }
-                    .onDisappear{
-                        NotificationCenter.default.post(name: UIDevice.orientationDidChangeNotification, object: nil)
-                        AppDelegate.orientationLock = .all
-                        currentOrientation = UIDevice.current.orientation
-                    }
-                /////////////////////////////////////////////
             } else {
                 
                 VStack() {
@@ -72,9 +53,7 @@ struct ContentView: View {
                             
                             Button(action: {
                                 if InterstitialViewController.canShowAd(){
-                                    //        DispatchQueue.main.async {
                                     isInterstitialShown = true
-                                    //       }
                                 }
                             }) {
                                 createButtonStyle(title: "Show Interstitial")
@@ -85,20 +64,11 @@ struct ContentView: View {
                     }
                     BannerViewWrapper(bannerView: bannerView)
                         .frame(height: 50)
-                        .ignoresSafeArea()
-                    
                 }
-                
-                // SHOULD BE IN THE SDK, NOT IN THE APP CODE!
-                .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                    currentOrientation = UIDevice.current.orientation
-                }
-                ////////////////////////////////////
                 .frame(maxWidth: .infinity)
-                //.ignoresSafeArea()
             }
         }
-        
+        .ignoresSafeArea(.all,edges: [.trailing,.leading])
     }
     
     func createButtonStyle(title: String) -> some View {
@@ -115,12 +85,10 @@ struct ContentView: View {
 
 struct MyView: UIViewControllerRepresentable {
     typealias UIViewControllerType = InterstitialView
-   
     func makeUIViewController(context: Context) -> InterstitialView {
         let vc = InterstitialView()
         return vc
     }
-    
     func updateUIViewController(_ uiViewController: InterstitialView, context: Context) {
     }
 }
@@ -143,6 +111,8 @@ extension Notification.Name {
 // Show an interstitial on top of any other view class
 class InterstitialView:InterstitialViewController {
     
+    @State var currentOrientation = UIDevice.current.orientation
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showAd()
@@ -152,6 +122,16 @@ class InterstitialView:InterstitialViewController {
         if Session.isInterstitialShown == false {
             NotificationCenter.default.post(name: .interstitialClosed, object: nil)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        currentOrientation = UIDevice.current.orientation
+        AppDelegate.orientationLock = InterstitialViewController.onViewAppear(currentOrientation:currentOrientation)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        currentOrientation = UIDevice.current.orientation
+        AppDelegate.orientationLock = InterstitialViewController.onViewDisappear()
     }
 }
 
