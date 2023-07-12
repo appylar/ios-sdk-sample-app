@@ -6,7 +6,6 @@ struct ContentView: View {
     @State private var isInterstitialShown = false
     @State private var bannerHeight = 50.0
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-   @State var currentOrientation = UIDevice.current.orientation
     var body: some View {
         GeometryReader { geometry in
             if isInterstitialShown {
@@ -73,12 +72,12 @@ struct ContentView: View {
     
     func createButtonStyle(title: String) -> some View {
         return Text(title.uppercased())
-            .frame(width: 200)
-            .frame(height: 15)
+            .frame(width: 200.0)
+            .frame(height: 15.0)
             .padding()
             .background(Color.init(red: 0.46, green: 0.56, blue: 0.73))
             .foregroundColor(.white)
-            .cornerRadius(8)
+            .cornerRadius(8.0)
             .disabled(isInterstitialShown)
     }
 }
@@ -111,8 +110,6 @@ extension Notification.Name {
 // Show an interstitial on top of any other view class
 class InterstitialView:InterstitialViewController {
     
-    @State var currentOrientation = UIDevice.current.orientation
-
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showAd()
@@ -122,16 +119,6 @@ class InterstitialView:InterstitialViewController {
         if Session.isInterstitialShown == false {
             NotificationCenter.default.post(name: .interstitialClosed, object: nil)
         }
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        currentOrientation = UIDevice.current.orientation
-        AppDelegate.orientationLock = InterstitialViewController.onViewAppear(currentOrientation:currentOrientation)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        currentOrientation = UIDevice.current.orientation
-        AppDelegate.orientationLock = InterstitialViewController.onViewDisappear()
     }
 }
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		849B96712A5C3927005183B6 /* Appylar.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849B96702A5C3926005183B6 /* Appylar.xcframework */; };
 		849B96722A5C3927005183B6 /* Appylar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 849B96702A5C3926005183B6 /* Appylar.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B7943F2C2A432BCC00EC74B3 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7943F2B2A432BCC00EC74B3 /* AdViewController.swift */; };
 		ED276F022A41742C0038B0C8 /* AppylarSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */; };
 		ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F032A41742C0038B0C8 /* ContentView.swift */; };
 		ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED276F052A41742F0038B0C8 /* Assets.xcassets */; };
@@ -31,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		849B96702A5C3926005183B6 /* Appylar.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Appylar.xcframework; sourceTree = "<group>"; };
-		B7943F2B2A432BCC00EC74B3 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		ED276EFE2A41742C0038B0C8 /* Appylar Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appylar Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppylarSwiftUIApp.swift; sourceTree = "<group>"; };
 		ED276F032A41742C0038B0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 				EDF1603C2A49D8B300499681 /* Info.plist */,
 				ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */,
 				ED276F032A41742C0038B0C8 /* ContentView.swift */,
-				B7943F2B2A432BCC00EC74B3 /* AdViewController.swift */,
 				ED276F052A41742F0038B0C8 /* Assets.xcassets */,
 			);
 			path = AppylarSampleApp;
@@ -159,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */,
-				B7943F2C2A432BCC00EC74B3 /* AdViewController.swift in Sources */,
 				ED276F022A41742C0038B0C8 /* AppylarSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

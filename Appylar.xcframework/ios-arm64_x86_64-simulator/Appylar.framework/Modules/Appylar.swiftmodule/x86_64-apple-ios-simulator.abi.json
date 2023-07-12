@@ -116,6 +116,63 @@
           },
           {
             "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Appylar@objc(cs)InterstitialViewController(im)viewDidAppear:",
+            "mangledName": "$s7Appylar26InterstitialViewControllerC13viewDidAppearyySbF",
+            "moduleName": "Appylar",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "canShowAd",
+            "printedName": "canShowAd()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7Appylar26InterstitialViewControllerC9canShowAdSbyFZ",
+            "mangledName": "$s7Appylar26InterstitialViewControllerC9canShowAdSbyFZ",
+            "moduleName": "Appylar",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onViewAppear",
             "printedName": "onViewAppear(currentOrientation:)",
             "children": [
@@ -164,51 +221,6 @@
             "declAttributes": [
               "Custom",
               "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "canShowAd",
-            "printedName": "canShowAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar26InterstitialViewControllerC9canShowAdSbyFZ",
-            "mangledName": "$s7Appylar26InterstitialViewControllerC9canShowAdSbyFZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "Custom",
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "canShowAdFromUnity",
-            "printedName": "canShowAdFromUnity()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar26InterstitialViewControllerC18canShowAdFromUnityyyF",
-            "mangledName": "$s7Appylar26InterstitialViewControllerC18canShowAdFromUnityyyF",
-            "moduleName": "Appylar",
-            "declAttributes": [
-              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -525,30 +537,6 @@
       },
       {
         "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "Appylar"
-      },
-      {
-        "kind": "Import",
-        "name": "SafariServices",
-        "printedName": "SafariServices",
-        "declKind": "Import",
-        "moduleName": "Appylar"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -663,607 +651,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Function",
-        "name": "initialize",
-        "printedName": "initialize(appkey:adTypes:testMode:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Bool",
-            "printedName": "Swift.Bool",
-            "usr": "s:Sb"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)initializeWithAppkey:adTypes:testMode:",
-        "mangledName": "$s7Appylar10initialize6appkey7adTypes8testModeySPys4Int8VG_AHSbtF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setParametersJSON",
-        "printedName": "setParametersJSON(dict:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "UnsafePointer",
-            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int8",
-                "printedName": "Swift.Int8",
-                "usr": "s:s4Int8V"
-              }
-            ],
-            "usr": "s:SP"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setParametersJSONWithDict:",
-        "mangledName": "$s7Appylar17setParametersJSON4dictySPys4Int8VG_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "canShowAdInterstitial",
-        "printedName": "canShowAdInterstitial()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)canShowAdInterstitial",
-        "mangledName": "$s7Appylar21canShowAdInterstitialyyF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "canShowAdBanner",
-        "printedName": "canShowAdBanner()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)canShowAdBanner",
-        "mangledName": "$s7Appylar15canShowAdBanneryyF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "showTopBanner",
-        "printedName": "showTopBanner()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)showTopBanner",
-        "mangledName": "$s7Appylar13showTopBanneryyF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "showBottomBanner",
-        "printedName": "showBottomBanner()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)showBottomBanner",
-        "mangledName": "$s7Appylar16showBottomBanneryyF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "showInterstitial",
-        "printedName": "showInterstitial()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)showInterstitial",
-        "mangledName": "$s7Appylar16showInterstitialyyF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "hideInterstitial",
-        "printedName": "hideInterstitial()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)hideInterstitial",
-        "mangledName": "$s7Appylar16hideInterstitialyyF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "hideBanner",
-        "printedName": "hideBanner()",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)hideBanner",
-        "mangledName": "$s7Appylar10hideBanneryyF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setOnInitialized",
-        "printedName": "setOnInitialized(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "() -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setOnInitializedWithDelegate:",
-        "mangledName": "$s7Appylar16setOnInitialized8delegateyyyXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setOnError",
-        "printedName": "setOnError(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UnsafePointer",
-                "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int8",
-                    "printedName": "Swift.Int8",
-                    "usr": "s:s4Int8V"
-                  }
-                ],
-                "usr": "s:SP"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setOnErrorWithDelegate:",
-        "mangledName": "$s7Appylar10setOnError8delegateyySPys4Int8VGXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "canShowBannerAds",
-        "printedName": "canShowBannerAds(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "(Swift.Bool) -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)canShowBannerAdsWithDelegate:",
-        "mangledName": "$s7Appylar16canShowBannerAds8delegateyySbXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "canShowInterstitialAds",
-        "printedName": "canShowInterstitialAds(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "(Swift.Bool) -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)canShowInterstitialAdsWithDelegate:",
-        "mangledName": "$s7Appylar22canShowInterstitialAds8delegateyySbXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setOnNoBanner",
-        "printedName": "setOnNoBanner(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "() -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setOnNoBannerWithDelegate:",
-        "mangledName": "$s7Appylar13setOnNoBanner8delegateyyyXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setOnBannerShown",
-        "printedName": "setOnBannerShown(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "(Swift.Int) -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setOnBannerShownWithDelegate:",
-        "mangledName": "$s7Appylar16setOnBannerShown8delegateyySiXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setOnNoInterstitial",
-        "printedName": "setOnNoInterstitial(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "() -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setOnNoInterstitialWithDelegate:",
-        "mangledName": "$s7Appylar19setOnNoInterstitial8delegateyyyXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setOnInterstitialClosed",
-        "printedName": "setOnInterstitialClosed(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "() -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setOnInterstitialClosedWithDelegate:",
-        "mangledName": "$s7Appylar23setOnInterstitialClosed8delegateyyyXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
-        "kind": "Function",
-        "name": "setOnInterstitialShown",
-        "printedName": "setOnInterstitialShown(delegate:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Void",
-            "printedName": "()"
-          },
-          {
-            "kind": "TypeFunc",
-            "name": "Function",
-            "printedName": "() -> ()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ]
-          }
-        ],
-        "declKind": "Func",
-        "usr": "c:(cm)setOnInterstitialShownWithDelegate:",
-        "mangledName": "$s7Appylar22setOnInterstitialShown8delegateyyyXC_tF",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl",
-          "CDecl"
-        ],
-        "funcSelfKind": "NonMutating"
       },
       {
         "kind": "Import",
@@ -2476,1658 +1863,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "UnityHelper",
-        "printedName": "UnityHelper",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "showTopBanner",
-            "printedName": "showTopBanner()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar11UnityHelperC13showTopBanneryyFZ",
-            "mangledName": "$s7Appylar11UnityHelperC13showTopBanneryyFZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showBottomBanner",
-            "printedName": "showBottomBanner()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar11UnityHelperC16showBottomBanneryyFZ",
-            "mangledName": "$s7Appylar11UnityHelperC16showBottomBanneryyFZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showInterstitial",
-            "printedName": "showInterstitial()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar11UnityHelperC16showInterstitialyyFZ",
-            "mangledName": "$s7Appylar11UnityHelperC16showInterstitialyyFZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hideInterstitial",
-            "printedName": "hideInterstitial()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar11UnityHelperC16hideInterstitialyyFZ",
-            "mangledName": "$s7Appylar11UnityHelperC16hideInterstitialyyFZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "hideBanner",
-            "printedName": "hideBanner()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar11UnityHelperC10hideBanneryyFZ",
-            "mangledName": "$s7Appylar11UnityHelperC10hideBanneryyFZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "showAlert",
-            "printedName": "showAlert(vc:sender:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar11UnityHelperC9showAlert2vc6senderySo16UIViewControllerC_ypSgtFZ",
-            "mangledName": "$s7Appylar11UnityHelperC9showAlert2vc6senderySo16UIViewControllerC_ypSgtFZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Var",
-            "name": "onInitialized",
-            "printedName": "onInitialized",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC13onInitializedyycSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC13onInitializedyycSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC13onInitializedyycSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC13onInitializedyycSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC13onInitializedyycSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC13onInitializedyycSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC13onInitializedyycSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC13onInitializedyycSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "onError",
-            "printedName": "onError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.UnsafePointer<Swift.Int8>) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UnsafePointer",
-                        "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int8",
-                            "printedName": "Swift.Int8",
-                            "usr": "s:s4Int8V"
-                          }
-                        ],
-                        "usr": "s:SP"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.UnsafePointer<Swift.Int8>) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UnsafePointer",
-                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int8",
-                                "printedName": "Swift.Int8",
-                                "usr": "s:s4Int8V"
-                              }
-                            ],
-                            "usr": "s:SP"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.UnsafePointer<Swift.Int8>) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.UnsafePointer<Swift.Int8>) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UnsafePointer",
-                            "printedName": "Swift.UnsafePointer<Swift.Int8>",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int8",
-                                "printedName": "Swift.Int8",
-                                "usr": "s:s4Int8V"
-                              }
-                            ],
-                            "usr": "s:SP"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC7onErrorySPys4Int8VGcSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "onNoBanner",
-            "printedName": "onNoBanner",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC10onNoBanneryycSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC10onNoBanneryycSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC10onNoBanneryycSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC10onNoBanneryycSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC10onNoBanneryycSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC10onNoBanneryycSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC10onNoBanneryycSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC10onNoBanneryycSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "onBannerShown",
-            "printedName": "onBannerShown",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Int) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC13onBannerShownySicSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC13onBannerShownySicSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Int) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC13onBannerShownySicSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC13onBannerShownySicSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Int) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Int) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC13onBannerShownySicSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC13onBannerShownySicSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC13onBannerShownySicSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC13onBannerShownySicSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "onNoInterstitial",
-            "printedName": "onNoInterstitial",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC16onNoInterstitialyycSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC16onNoInterstitialyycSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC16onNoInterstitialyycSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC16onNoInterstitialyycSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC16onNoInterstitialyycSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC16onNoInterstitialyycSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC16onNoInterstitialyycSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC16onNoInterstitialyycSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "onInterstitialClosed",
-            "printedName": "onInterstitialClosed",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC20onInterstitialClosedyycSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC20onInterstitialClosedyycSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC20onInterstitialClosedyycSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC20onInterstitialClosedyycSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC20onInterstitialClosedyycSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC20onInterstitialClosedyycSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC20onInterstitialClosedyycSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC20onInterstitialClosedyycSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "onInterstitialShown",
-            "printedName": "onInterstitialShown",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(() -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "() -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC19onInterstitialShownyycSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC19onInterstitialShownyycSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC19onInterstitialShownyycSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC19onInterstitialShownyycSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(() -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "() -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC19onInterstitialShownyycSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC19onInterstitialShownyycSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC19onInterstitialShownyycSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC19onInterstitialShownyycSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "canShowBannerAds",
-            "printedName": "canShowBannerAds",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC16canShowBannerAdsySbcSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC16canShowBannerAdsySbcSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Bool) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Bool) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC16canShowBannerAdsySbcSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC16canShowBannerAdsySbcSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Bool) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Bool) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC16canShowBannerAdsySbcSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC16canShowBannerAdsySbcSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC16canShowBannerAdsySbcSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC16canShowBannerAdsySbcSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "canShowInterstitialAds",
-            "printedName": "canShowInterstitialAds",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvpZ",
-            "mangledName": "$s7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvpZ",
-            "moduleName": "Appylar",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isFromExtension": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Bool) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Bool) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvgZ",
-                "mangledName": "$s7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvgZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "((Swift.Bool) -> ())?",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.Bool) -> ()",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Void",
-                            "printedName": "()"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Bool",
-                            "printedName": "Swift.Bool",
-                            "usr": "s:Sb"
-                          }
-                        ]
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvsZ",
-                "mangledName": "$s7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvsZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvMZ",
-                "mangledName": "$s7Appylar11UnityHelperC22canShowInterstitialAdsySbcSgvMZ",
-                "moduleName": "Appylar",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "isFromExtension": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:7Appylar11UnityHelperC",
-        "mangledName": "$s7Appylar11UnityHelperC",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "hasMissingDesignatedInitializers": true
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
@@ -4229,23 +1964,17 @@
           {
             "kind": "Function",
             "name": "onBannerShown",
-            "printedName": "onBannerShown(_:)",
+            "printedName": "onBannerShown()",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7Appylar18BannerViewDelegateP02onB5ShownyySiF",
-            "mangledName": "$s7Appylar18BannerViewDelegateP02onB5ShownyySiF",
+            "usr": "s:7Appylar18BannerViewDelegateP02onB5ShownyyF",
+            "mangledName": "$s7Appylar18BannerViewDelegateP02onB5ShownyyF",
             "moduleName": "Appylar",
             "genericSig": "<τ_0_0 where τ_0_0 : Appylar.BannerViewDelegate>",
             "sugared_genericSig": "<Self where Self : Appylar.BannerViewDelegate>",
@@ -4341,16 +2070,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Appylar",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4393,27 +2112,6 @@
             "declKind": "Func",
             "usr": "s:7Appylar10BannerViewC9canShowAdSbyF",
             "mangledName": "$s7Appylar10BannerViewC9canShowAdSbyF",
-            "moduleName": "Appylar",
-            "declAttributes": [
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "canShowAdFromUnity",
-            "printedName": "canShowAdFromUnity()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7Appylar10BannerViewC18canShowAdFromUnityyyF",
-            "mangledName": "$s7Appylar10BannerViewC18canShowAdFromUnityyyF",
             "moduleName": "Appylar",
             "declAttributes": [
               "Custom",
@@ -4774,511 +2472,497 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Views\/InterstitialViewController.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Views\/InterstitialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 404,
+      "offset": 462,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Views\/InterstitialViewController.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Views\/InterstitialViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 348,
+      "offset": 406,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Ads\/Advertisement.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Ads\/Advertisement.swift",
       "kind": "BooleanLiteral",
       "offset": 739,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdOrientation.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdOrientation.swift",
       "kind": "StringLiteral",
       "offset": 170,
       "length": 10,
       "value": "\"portrait\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdOrientation.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdOrientation.swift",
       "kind": "StringLiteral",
       "offset": 202,
       "length": 11,
       "value": "\"landscape\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdOrientation.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdOrientation.swift",
       "kind": "StringLiteral",
       "offset": 170,
       "length": 10,
       "value": "\"portrait\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdOrientation.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdOrientation.swift",
       "kind": "StringLiteral",
       "offset": 202,
       "length": 11,
       "value": "\"landscape\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "StringLiteral",
       "offset": 221,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "StringLiteral",
       "offset": 256,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "StringLiteral",
       "offset": 291,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
       "offset": 320,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "Array",
       "offset": 368,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "Array",
       "offset": 426,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "FloatLiteral",
       "offset": 463,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
       "offset": 503,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
       "offset": 538,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
       "offset": 570,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "IntegerLiteral",
       "offset": 667,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
       "offset": 709,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
       "offset": 752,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
       "offset": 808,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Core\/Session.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Core\/Session.swift",
       "kind": "BooleanLiteral",
       "offset": 851,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdType.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
       "offset": 154,
       "length": 8,
       "value": "\"banner\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdType.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 14,
       "value": "\"interstitial\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdType.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
       "offset": 154,
       "length": 8,
       "value": "\"banner\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/AdType.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/AdType.swift",
       "kind": "StringLiteral",
       "offset": 187,
       "length": 14,
       "value": "\"interstitial\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 187,
-      "length": 19,
-      "value": "\"com.appylarios.io\""
-    },
-    {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 232,
+      "offset": 178,
       "length": 25,
       "value": "\"https:\/\/www.appylar.com\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 287,
+      "offset": 233,
       "length": 18,
       "value": "\"\/api\/v1\/content\/\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 336,
+      "offset": 282,
       "length": 16,
       "value": "\"\/api\/v1\/error\/\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 389,
+      "offset": 335,
       "length": 18,
       "value": "\"\/api\/v1\/session\/\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 464,
+      "offset": 410,
       "length": 7,
       "value": "\"width\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 443,
       "length": 9,
       "value": "\"density\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 531,
+      "offset": 477,
       "length": 8,
       "value": "\"height\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 565,
+      "offset": 511,
       "length": 9,
       "value": "\"country\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 601,
+      "offset": 547,
       "length": 10,
       "value": "\"language\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 636,
+      "offset": 582,
       "length": 9,
       "value": "\"app_key\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 669,
+      "offset": 615,
       "length": 8,
       "value": "\"app_id\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 704,
+      "offset": 650,
       "length": 11,
       "value": "\"test_mode\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 692,
       "length": 14,
       "value": "\"orientations\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 791,
+      "offset": 737,
       "length": 15,
       "value": "\"session_token\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 841,
+      "offset": 787,
       "length": 19,
       "value": "\"rotation_interval\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 837,
       "length": 15,
       "value": "\"buffer_limits\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 874,
       "length": 5,
       "value": "\"min\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 957,
+      "offset": 903,
       "length": 7,
       "value": "\"error\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 998,
+      "offset": 944,
       "length": 18,
       "value": "\"extra_parameters\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1047,
+      "offset": 993,
       "length": 14,
       "value": "\"combinations\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1085,
+      "offset": 1031,
       "length": 7,
       "value": "\"scale\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1115,
+      "offset": 1061,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1146,
+      "offset": 1092,
       "length": 8,
       "value": "\"result\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1175,
+      "offset": 1121,
       "length": 4,
       "value": "\"ad\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1209,
+      "offset": 1155,
       "length": 13,
       "value": "\"orientation\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1250,
+      "offset": 1196,
       "length": 12,
       "value": "\"expires_at\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1285,
+      "offset": 1231,
       "length": 6,
       "value": "\"html\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1313,
+      "offset": 1259,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1347,
+      "offset": 1293,
       "length": 12,
       "value": "\"statusCode\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1400,
+      "offset": 1346,
       "length": 24,
       "value": "\"adRetrieveNotification\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1454,
+      "offset": 1400,
       "length": 28,
       "value": "\"You didn't provide App-key\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1517,
+      "offset": 1463,
       "length": 35,
       "value": "\"You didn't provide an Orientation\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1582,
+      "offset": 1528,
       "length": 28,
       "value": "\"You didn't provide Ad-Type\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1672,
+      "offset": 1618,
       "length": 18,
       "value": "\"err_rate_limited\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1726,
+      "offset": 1672,
       "length": 18,
       "value": "\"err_unauthorized\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1777,
+      "offset": 1723,
       "length": 15,
       "value": "\"err_forbidden\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1815,
+      "offset": 1761,
       "length": 6,
       "value": "\"wait\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Models\/Helper\/Constants.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Models\/Helper\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1852,
+      "offset": 1798,
       "length": 18,
       "value": "\"err_invalid_data\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/UnityHelperClasses\/UnityKit\/UnityHelper.swift",
-      "kind": "BooleanLiteral",
-      "offset": 230,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Views\/BannerView.swift",
       "kind": "BooleanLiteral",
       "offset": 342,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Views\/BannerView.swift",
       "kind": "BooleanLiteral",
       "offset": 383,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Views\/BannerView.swift",
       "kind": "StringLiteral",
       "offset": 404,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Views\/BannerView.swift",
       "kind": "StringLiteral",
       "offset": 455,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Views\/BannerView.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Views\/BannerView.swift",
       "kind": "IntegerLiteral",
       "offset": 512,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/RequestType.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/RequestType.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/ios_mayank\/Documents\/Appylar-Unity\/Appylar\/Enumerations\/RequestType.swift",
+      "filePath": "\/Users\/ayushbharadwaj\/Desktop\/AppylarSDK_Uploaded\/Appylar\/Enumerations\/RequestType.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 6,

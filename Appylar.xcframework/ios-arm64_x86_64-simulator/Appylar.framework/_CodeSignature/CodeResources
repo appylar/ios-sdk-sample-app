@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Appylar-Swift.h</key>
 		<data>
-		zDUh2tEHcZLrvNKRFmN4ToL39aY=
+		SNsTh5MWovZvaT/sNksMpN3R6aE=
 		</data>
 		<key>Headers/Appylar.h</key>
 		<data>
@@ -14,27 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		W4vgs+dL88FkCnKct0GSINO1IIE=
-		</data>
-		<key>Main.storyboardc/AdContainerViewController.nib</key>
-		<data>
-		HRUDcPNzVTf7j4TwSUd1OnLDLSo=
-		</data>
-		<key>Main.storyboardc/Info.plist</key>
-		<data>
-		+SeOhlgjCNHOFAR+GZoOB7LE15s=
-		</data>
-		<key>Main.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
-		<data>
-		cAyMS4gg2pAINkFP8cgX2s1mHCY=
+		/MUxZXV8NpcazB4LRzL/9xmmUTs=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6ds1JinlIDbdr8CtEyvaO3E4ZW8=
+		sjQ7I8qkg+NvVORml3+8YjJ/NSE=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GmyPk/oU4rzhJiIlMCaFMgG5KrU=
+		RTkbLqTQGtSc9XNeNjPznCbOQBs=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,19 +30,19 @@
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GmyPk/oU4rzhJiIlMCaFMgG5KrU=
+		RTkbLqTQGtSc9XNeNjPznCbOQBs=
 		</data>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		y5duGqLfRdGAE7GyoeOplxPh2EQ=
+		fGAogROcRjVsW3+u9UkvARAtNP8=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6ds1JinlIDbdr8CtEyvaO3E4ZW8=
+		sjQ7I8qkg+NvVORml3+8YjJ/NSE=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		E6CgVBR4r0oZ6Fhcfve0vHjkIxE=
+		OOl2i7EL4+TFP6Gamgw3nOU6ERQ=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +50,11 @@
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		E6CgVBR4r0oZ6Fhcfve0vHjkIxE=
+		OOl2i7EL4+TFP6Gamgw3nOU6ERQ=
 		</data>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ChmlQvXIVqPCH5g0fNYz9lyJEUk=
+		K8IdQSgKJsIJqErpgYTAho6qPhs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w73jWA+4ju+PREUqt9M0mxP9viAIq2A2h1IU1XRs14E=
+			r4P2dGRgSi4czuAmAVnzBdUFajU9F4tx8Lfrxh1OEBA=
 			</data>
 		</dict>
 		<key>Headers/Appylar.h</key>
@@ -89,39 +77,18 @@
 			xLJ6ljHMA5SOD7Y4MiNavksV91o9YjsgwaTZKfgTeZw=
 			</data>
 		</dict>
-		<key>Main.storyboardc/AdContainerViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/32q5W29FXvRZlG8nYTHyNLSUdtyZzDNYdFNykIF/XI=
-			</data>
-		</dict>
-		<key>Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			UMzqDOxElwcbj67dXrlaBtWplKg4bcDjaiS1zmy/f6A=
-			</data>
-		</dict>
-		<key>Main.storyboardc/Y6W-OH-hqX-view-5EZ-qb-Rvc.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Yx7Tuuu+ID+0wXw8/UtXM7wLlhiwoxC+rQFlcoWiRk8=
-			</data>
-		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9xyF+Rhj4ByvWisGK/rB/DldhFi42+0cZMJLuYytNs=
+			MUkSOuq5o3BbRxaO7+XVXV03woeutuZiT2DOTvKRe0c=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			emfoDEV+fsYeMX2MgnDsKVpfzcTdWNVwQU9Lr/vU6qc=
+			urrT+UPRjbLQaQhhtsow29EQX8w1HQNBHlt8pn3PXY4=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -135,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			emfoDEV+fsYeMX2MgnDsKVpfzcTdWNVwQU9Lr/vU6qc=
+			urrT+UPRjbLQaQhhtsow29EQX8w1HQNBHlt8pn3PXY4=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6GIb6YYw2eltnrpxHyswxz8s2y7nnzGqokvO4cLbBz8=
+			KZ6H1AwBJ+6HGtUdMTVeSZMWHfTjzZ05Gv6zdrNzAoM=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9xyF+Rhj4ByvWisGK/rB/DldhFi42+0cZMJLuYytNs=
+			MUkSOuq5o3BbRxaO7+XVXV03woeutuZiT2DOTvKRe0c=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BBcgH6XHJthEa+Uh7IQe8biHCVTHoooocA5eqzGWJ1A=
+			4GY6v6qxUcToIrJuprDjaW6hgPvOir7fycD0dt+s7GU=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -170,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BBcgH6XHJthEa+Uh7IQe8biHCVTHoooocA5eqzGWJ1A=
+			4GY6v6qxUcToIrJuprDjaW6hgPvOir7fycD0dt+s7GU=
 			</data>
 		</dict>
 		<key>Modules/Appylar.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P28WkDZ8yY/XfaIJHtKRN+BL2eoFbFAsvF5pEUK2t8Y=
+			iu7OGMlpalax4/FNTZQUcUbETedUqgwpvkbYOvjTXto=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
