@@ -4,7 +4,6 @@ import Appylar
 struct ContentView: View {
     @State private var bannerView = BannerView()
     @State private var isInterstitialShown = false
-    @State private var bannerHeight = 50.0
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some View {
         GeometryReader { geometry in
