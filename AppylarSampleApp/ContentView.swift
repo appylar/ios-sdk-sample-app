@@ -8,21 +8,28 @@ struct ContentView: View {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some View {
         GeometryReader { geometry in
+            
+            // Check if interstitial should be shown...
             if isInterstitialShown {
                 
-                MyView()
+                // Place the interstitial view container and make it cover the whole screen
+                InterstitialViewContainer()
                     .onReceive(NotificationCenter.default.publisher(for: .interstitialClosed))  { _ in
                         isInterstitialShown = false
                     }
                     .ignoresSafeArea(.all)
                     .frame(width: UIScreen.main.bounds.width)
                     .frame(height: UIScreen.main.bounds.height)
+                
+            // ...or if the menu should be shown
             } else {
                 
                 VStack() {
                     ScrollView(showsIndicators: false){
                         VStack(spacing: 25) {
                             Spacer()
+                            
+                            // Show Appylar logo and text
                             Image("appylar_logo")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -36,18 +43,19 @@ struct ContentView: View {
                             
                             Spacer()
                             
+                            // Create buttons
                             Button(action: {
                                 if BannerView().canShowAd(){
                                     bannerView.showAd()
                                 }
                             }) {
-                                createButtonStyle(title: "Show Banner")
+                                setButtonStyle(title: "Show Banner")
                             }
                             
                             Button(action: {
                                 bannerView.hideAd()
                             }) {
-                                createButtonStyle(title: "Hide Banner")
+                                setButtonStyle(title: "Hide Banner")
                             }
                             
                             Button(action: {
@@ -55,13 +63,15 @@ struct ContentView: View {
                                     isInterstitialShown = true
                                 }
                             }) {
-                                createButtonStyle(title: "Show Interstitial")
+                                setButtonStyle(title: "Show Interstitial")
                             }
                             
                             Spacer()
                         }
                     }
-                    BannerViewWrapper(bannerView: bannerView)
+                    
+                    // Place the banner view container at the bottom of the screen
+                    BannerViewContainer(bannerView: bannerView)
                         .frame(height: 50)
                 }
                 .frame(maxWidth: .infinity)
@@ -70,7 +80,8 @@ struct ContentView: View {
         .ignoresSafeArea(.all,edges: [.trailing,.leading])
     }
     
-    func createButtonStyle(title: String) -> some View {
+    // Set a standard button style
+    func setButtonStyle(title: String) -> some View {
         return Text(title.uppercased())
             .frame(width: 200.0)
             .frame(height: 15.0)
@@ -82,7 +93,8 @@ struct ContentView: View {
     }
 }
 
-struct MyView: UIViewControllerRepresentable {
+// Set the container where the interstitials will be shown
+struct InterstitialViewContainer: UIViewControllerRepresentable {
     typealias UIViewControllerType = InterstitialView
     func makeUIViewController(context: Context) -> InterstitialView {
         let vc = InterstitialView()
@@ -92,8 +104,8 @@ struct MyView: UIViewControllerRepresentable {
     }
 }
 
-
-struct BannerViewWrapper: UIViewRepresentable {
+// Set the container where the banners will be shown
+struct BannerViewContainer: UIViewRepresentable {
     let bannerView: BannerView
     func makeUIView(context: Context) -> UIView {
         bannerView
@@ -102,12 +114,12 @@ struct BannerViewWrapper: UIViewRepresentable {
     }
 }
 
-
+// Set notification to be able to detect when the interstitial is closed
 extension Notification.Name {
     static let interstitialClosed = Notification.Name("interstitialClosed")
 }
 
-// Show an interstitial on top of any other view class
+// Create the interstitial view
 class InterstitialView:InterstitialViewController {
     
     override func viewDidLoad() {
@@ -122,6 +134,7 @@ class InterstitialView:InterstitialViewController {
     }
 }
 
+// Set the preview
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
