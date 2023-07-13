@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		849B96712A5C3927005183B6 /* Appylar.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849B96702A5C3926005183B6 /* Appylar.xcframework */; };
-		849B96722A5C3927005183B6 /* Appylar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 849B96702A5C3926005183B6 /* Appylar.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84756C312A601C380009680C /* Appylar.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84756C302A601C370009680C /* Appylar.xcframework */; };
+		84756C322A601C380009680C /* Appylar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84756C302A601C370009680C /* Appylar.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED276F022A41742C0038B0C8 /* AppylarSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */; };
 		ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F032A41742C0038B0C8 /* ContentView.swift */; };
 		ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED276F052A41742F0038B0C8 /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				849B96722A5C3927005183B6 /* Appylar.xcframework in Embed Frameworks */,
+				84756C322A601C380009680C /* Appylar.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,7 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		849B96702A5C3926005183B6 /* Appylar.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Appylar.xcframework; sourceTree = "<group>"; };
+		84756C302A601C370009680C /* Appylar.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Appylar.xcframework; sourceTree = "<group>"; };
 		ED276EFE2A41742C0038B0C8 /* Appylar Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appylar Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppylarSwiftUIApp.swift; sourceTree = "<group>"; };
 		ED276F032A41742C0038B0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849B96712A5C3927005183B6 /* Appylar.xcframework in Frameworks */,
+				84756C312A601C380009680C /* Appylar.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +52,7 @@
 		B772652F2A45B615003838DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				849B96702A5C3926005183B6 /* Appylar.xcframework */,
+				84756C302A601C370009680C /* Appylar.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -108,7 +108,8 @@ struct InterstitialViewContainer: UIViewControllerRepresentable {
 struct BannerViewContainer: UIViewRepresentable {
     let bannerView: BannerView
     func makeUIView(context: Context) -> UIView {
-        bannerView
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        return bannerView
     }
     func updateUIView(_ uiView: UIView, context: Context) {
     }
