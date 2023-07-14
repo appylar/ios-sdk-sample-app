@@ -30,21 +30,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
-extension AppylarSampleApp: InterstitialDelegate {
+extension AppylarSampleApp: AppylarDelegate{
     
-    // Event listener triggered when there are no interstitials to show
-    func onNoInterstitial() {
-        print("onNoInterstitial()")
+    // Event listener triggered at successful initialization
+    func onInitialized() {
+        print("onInitialized")
     }
     
-    // Event listener triggered when an interstitial is shown
-    func onInterstitialShown() {
-        print("onInterstitialShown()")
-    }
-    
-    // Event listener triggered when an interstitial is closed
-    func onInterstitialClosed() {
-        print("onInterstitialClosed()")
+    // Event listener triggered if an error occurs in the SDK
+    func onError(error: String) {
+        print("onError:\(error)")
     }
 }
 
@@ -61,16 +56,21 @@ extension AppylarSampleApp: BannerViewDelegate {
     }
 }
 
-extension AppylarSampleApp: AppylarDelegate{
+extension AppylarSampleApp: InterstitialDelegate {
     
-    // Event listener triggered at successful initialization
-    func onInitialized() {
-        print("onInitialized")
+    // Event listener triggered when there are no interstitials to show
+    func onNoInterstitial() {
+        print("onNoInterstitial()")
     }
     
-    // Event listener triggered if an error occurs in the SDK
-    func onError(error: String) {
-        print("onError:\(error)")
+    // Event listener triggered when an interstitial is shown
+    func onInterstitialShown() {
+        print("onInterstitialShown()")
+    }
+    
+    // Event listener triggered when an interstitial is closed
+    func onInterstitialClosed() {
+        print("onInterstitialClosed()")
     }
 }
 
