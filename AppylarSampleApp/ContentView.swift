@@ -41,7 +41,7 @@ struct ContentView: View {
                             
                             // Create buttons
                             Button(action: {
-                                if BannerView().canShowAd(){
+                                if bannerView.canShowAd(){
                                     bannerView.showAd()
                                 }
                             }) {
