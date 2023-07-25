@@ -26,21 +26,18 @@ struct ContentView: View {
                 VStack() {
                     ScrollView(showsIndicators: false){
                         VStack(spacing: 25) {
-                            Spacer()
-                            
+
                             // Show Appylar logo and text
                             Image("appylar_logo")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 40.0)
-                                .padding(.top, 30.0)
+                                .padding(.top, 70.0)
                             
                             Text("Appylar Sample App")
                                 .font(.largeTitle)
                                 .foregroundColor(Color.init(red: 0.16, green: 0.21, blue: 0.26))
                                 .padding()
-                            
-                            Spacer()
                             
                             // Create buttons
                             Button(action: {
@@ -64,8 +61,6 @@ struct ContentView: View {
                             }) {
                                 setButtonStyle(title: "Show Interstitial")
                             }
-                            
-                            Spacer()
                         }
                     }
                     
@@ -114,13 +109,13 @@ struct BannerViewContainer: UIViewRepresentable {
     }
 }
 
-// Set notification to be able to detect when the interstitial is closed
+// Set notification to be able to detect when the interstitials are closed
 extension Notification.Name {
     static let interstitialClosed = Notification.Name("interstitialClosed")
 }
 
 // Create the interstitial view
-class InterstitialView:InterstitialViewController {
+class InterstitialView: InterstitialViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
