@@ -15,7 +15,7 @@ struct AppylarSampleApp: App {
 
         // Initialize
         AppylarManager.initialize(
-            appKey: "<appKey>", // The unique app key for your app
+            appKey: "YOUR_APP_KEY", // The unique app key for your app
             adTypes: [AdType.banner, AdType.interstitial], // The ad types that you want to show
             testMode: true // Test mode, true for development, false for production
         )
