@@ -7,29 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84A09E842A8A32CB00DE12D7 /* Appylar.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A09E832A8A32CA00DE12D7 /* Appylar.xcframework */; };
-		84A09E852A8A32CB00DE12D7 /* Appylar.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84A09E832A8A32CA00DE12D7 /* Appylar.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ED276F022A41742C0038B0C8 /* AppylarSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */; };
 		ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F032A41742C0038B0C8 /* ContentView.swift */; };
 		ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED276F052A41742F0038B0C8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B7809F762A4B1FA00010E1DC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				84A09E852A8A32CB00DE12D7 /* Appylar.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		84A09E832A8A32CA00DE12D7 /* Appylar.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Appylar.xcframework; sourceTree = "<group>"; };
 		ED276EFE2A41742C0038B0C8 /* Appylar Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appylar Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppylarSwiftUIApp.swift; sourceTree = "<group>"; };
 		ED276F032A41742C0038B0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,7 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A09E842A8A32CB00DE12D7 /* Appylar.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +34,6 @@
 		B772652F2A45B615003838DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84A09E832A8A32CA00DE12D7 /* Appylar.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,7 +76,6 @@
 				ED276EFA2A41742C0038B0C8 /* Sources */,
 				ED276EFB2A41742C0038B0C8 /* Frameworks */,
 				ED276EFC2A41742C0038B0C8 /* Resources */,
-				B7809F762A4B1FA00010E1DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
