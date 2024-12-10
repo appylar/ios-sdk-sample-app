@@ -3,10 +3,8 @@ import SwiftUI
 
 @main
 struct AppylarSampleApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     init() {
         // Set event listener before initialization
-        // Set event to show log for banner & interstitial then you have to pass delegate as self for indivisualy ads
         /* Example: AppylarManager.setEventListener(delegate: self, bannerDelegate: self) // For Banner Ads only
                     AppylarManager.setEventListener(delegate: self, interstitialDelegate: self) // For Interstitial Ads only
                     AppylarManager.setEventListener(delegate: self, bannerDelegate: self, interstitialDelegate: self) // For Both Ads
@@ -22,7 +20,7 @@ struct AppylarSampleApp: App {
 
         AppylarManager.setParameters(dict: [
             "banner_height": ["50"],
-            "age_restriction": ["18"]
+            "age_restriction": ["12"]
         ])
     }
 
@@ -30,13 +28,6 @@ struct AppylarSampleApp: App {
         WindowGroup {
             ContentView()
         }
-    }
-}
-
-// Define the app delegate to keep track of the screen orientations when device is flipped
-class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return AppylarManager.supportedOrientation
     }
 }
 
@@ -54,8 +45,8 @@ extension AppylarSampleApp: AppylarDelegate {
 
 extension AppylarSampleApp: BannerViewDelegate {
     // Event listener triggered when a banner is shown
-    func onBannerShown() {
-        print("onBannerShown()")
+    func onBannerShown(_ height: Int) {
+        print("onBannerShown(): \(height)")
     }
 
     // Event listener triggered when there are no banners to show

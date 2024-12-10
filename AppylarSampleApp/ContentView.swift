@@ -4,7 +4,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var bannerView = BannerView()
     @State private var isInterstitialShown = false
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some View {
         GeometryReader { _ in
             // Check if interstitial should be shown...
