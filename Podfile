@@ -6,5 +6,5 @@ target 'Appylar Sample App' do
   use_frameworks!
 
   # Pods for Appylar Sample App
-  pod "Appylar", '~> 2.3.4'
+  pod "Appylar", '~> 2.3.6'
 end
