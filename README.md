@@ -1,4 +1,4 @@
-# The Appylar iOS SDK Swift UI sample app
+# The Appylar iOS SDK sample app
 
 This app contains a simple implementation of the Appylar iOS SDK. Before you start the app, add a valid app key from an app registered on your Appylar account in the initialization function. Also, make sure to set the correct bundle id for your app in your IDE.
 
