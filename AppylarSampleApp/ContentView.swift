@@ -21,50 +21,41 @@ struct ContentView: View {
                 // ...or if the menu should be shown
             } else {
                 VStack {
-                    ScrollView(showsIndicators: false) {
-                        VStack(spacing: 25) {
-                            // Show Appylar logo and text
-                            Image("appylar_logo")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 40.0)
-                                .padding(.top, 70.0)
+                    VStack(spacing: 14) {
+                        Text("Appylar iOS\nSample App")
+                            .font(.largeTitle)
+                            .foregroundColor(Color(red: 0.16, green: 0.21, blue: 0.26))
+                            .padding()
 
-                            Text("Appylar Sample App")
-                                .font(.largeTitle)
-                                .foregroundColor(Color(red: 0.16, green: 0.21, blue: 0.26))
-                                .padding()
-
-                            // Create buttons
-                            Button(action: {
-                                if bannerView.canShowAd() {
-                                    bannerView.showAd()
-                                }
-                            }) {
-                                setButtonStyle(title: "Show Banner")
+                        // Create buttons
+                        Button(action: {
+                            if bannerView.canShowAd() {
+                                bannerView.showAd()
                             }
-
-                            Button(action: {
-                                bannerView.hideAd()
-                            }) {
-                                setButtonStyle(title: "Hide Banner")
-                            }
-
-                            Button(action: {
-                                if InterstitialViewController.canShowAd() {
-                                    isInterstitialShown = true
-                                }
-                            }) {
-                                setButtonStyle(title: "Show Interstitial")
-                            }
+                        }) {
+                            setButtonStyle(title: "Show Banner")
                         }
-                    }
+
+                        Button(action: {
+                            bannerView.hideAd()
+                        }) {
+                            setButtonStyle(title: "Hide Banner")
+                        }
+
+                        Button(action: {
+                            if InterstitialViewController.canShowAd() {
+                                isInterstitialShown = true
+                            }
+                        }) {
+                            setButtonStyle(title: "Show Interstitial")
+                        }
+                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
 
                     // Place the banner view container at the bottom of the screen
                     BannerViewContainer(bannerView: bannerView)
                         .frame(height: 50)
                 }
-                .frame(maxWidth: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
         .ignoresSafeArea(.all, edges: [.trailing, .leading])
@@ -97,8 +88,10 @@ struct InterstitialViewContainer: UIViewControllerRepresentable {
 // Set the container where the banners will be shown
 struct BannerViewContainer: UIViewRepresentable {
     let bannerView: BannerView
+    
     func makeUIView(context: Context) -> UIView {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
+        //bannerView.backgroundColor = UIColor.red
         return bannerView
     }
 
