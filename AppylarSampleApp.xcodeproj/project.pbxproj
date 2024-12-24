@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E02F0B9DD6F474B99E81EC5 /* Pods_Appylar_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C02C8F3F60B630E2647D2C /* Pods_Appylar_Sample_App.framework */; };
+		70599CF92D1AC1F500038F7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70599CF82D1AC1F500038F7E /* LaunchScreen.storyboard */; };
 		ED276F022A41742C0038B0C8 /* AppylarSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */; };
 		ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F032A41742C0038B0C8 /* ContentView.swift */; };
 		ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED276F052A41742F0038B0C8 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* Begin PBXFileReference section */
 		00C02C8F3F60B630E2647D2C /* Pods_Appylar_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appylar_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0227796E39B05988118B11E7 /* Pods-Appylar Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appylar Sample App.release.xcconfig"; path = "Target Support Files/Pods-Appylar Sample App/Pods-Appylar Sample App.release.xcconfig"; sourceTree = "<group>"; };
+		70599CF82D1AC1F500038F7E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		788E8479713486296D14F033 /* Pods-Appylar Sample App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appylar Sample App.debug.xcconfig"; path = "Target Support Files/Pods-Appylar Sample App/Pods-Appylar Sample App.debug.xcconfig"; sourceTree = "<group>"; };
 		ED276EFE2A41742C0038B0C8 /* Appylar Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appylar Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppylarSwiftUIApp.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 		ED276EF52A41742C0038B0C8 = {
 			isa = PBXGroup;
 			children = (
+				70599CF82D1AC1F500038F7E /* LaunchScreen.storyboard */,
 				ED276F002A41742C0038B0C8 /* AppylarSampleApp */,
 				ED276EFF2A41742C0038B0C8 /* Products */,
 				B772652F2A45B615003838DD /* Frameworks */,
@@ -79,7 +82,6 @@
 				788E8479713486296D14F033 /* Pods-Appylar Sample App.debug.xcconfig */,
 				0227796E39B05988118B11E7 /* Pods-Appylar Sample App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */,
+				70599CF92D1AC1F500038F7E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppylarSampleApp/Preview Content\"";
@@ -331,9 +335,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppylarSampleApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Appylar iOS Sample App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -356,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppylarSampleApp/Preview Content\"";
@@ -363,9 +370,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AppylarSampleApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Appylar iOS Sample App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
