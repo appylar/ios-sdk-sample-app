@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E02F0B9DD6F474B99E81EC5 /* Pods_Appylar_Sample_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C02C8F3F60B630E2647D2C /* Pods_Appylar_Sample_App.framework */; };
 		ED276F022A41742C0038B0C8 /* AppylarSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */; };
 		ED276F042A41742C0038B0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED276F032A41742C0038B0C8 /* ContentView.swift */; };
 		ED276F062A41742F0038B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED276F052A41742F0038B0C8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C02C8F3F60B630E2647D2C /* Pods_Appylar_Sample_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Appylar_Sample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0227796E39B05988118B11E7 /* Pods-Appylar Sample App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appylar Sample App.release.xcconfig"; path = "Target Support Files/Pods-Appylar Sample App/Pods-Appylar Sample App.release.xcconfig"; sourceTree = "<group>"; };
+		788E8479713486296D14F033 /* Pods-Appylar Sample App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Appylar Sample App.debug.xcconfig"; path = "Target Support Files/Pods-Appylar Sample App/Pods-Appylar Sample App.debug.xcconfig"; sourceTree = "<group>"; };
 		ED276EFE2A41742C0038B0C8 /* Appylar Sample App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Appylar Sample App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED276F012A41742C0038B0C8 /* AppylarSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppylarSwiftUIApp.swift; sourceTree = "<group>"; };
 		ED276F032A41742C0038B0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E02F0B9DD6F474B99E81EC5 /* Pods_Appylar_Sample_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +39,7 @@
 		B772652F2A45B615003838DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00C02C8F3F60B630E2647D2C /* Pods_Appylar_Sample_App.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -44,6 +50,7 @@
 				ED276F002A41742C0038B0C8 /* AppylarSampleApp */,
 				ED276EFF2A41742C0038B0C8 /* Products */,
 				B772652F2A45B615003838DD /* Frameworks */,
+				F1DC9A8B5AEC2E18374E7FBF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +73,16 @@
 			path = AppylarSampleApp;
 			sourceTree = "<group>";
 		};
+		F1DC9A8B5AEC2E18374E7FBF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				788E8479713486296D14F033 /* Pods-Appylar Sample App.debug.xcconfig */,
+				0227796E39B05988118B11E7 /* Pods-Appylar Sample App.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,9 +90,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED276F112A41742F0038B0C8 /* Build configuration list for PBXNativeTarget "Appylar Sample App" */;
 			buildPhases = (
+				53B932B6F5E27972A180DC35 /* [CP] Check Pods Manifest.lock */,
 				ED276EFA2A41742C0038B0C8 /* Sources */,
 				ED276EFB2A41742C0038B0C8 /* Frameworks */,
 				ED276EFC2A41742C0038B0C8 /* Resources */,
+				0E6577885E39E978EE8C7D92 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +148,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E6577885E39E978EE8C7D92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appylar Sample App/Pods-Appylar Sample App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Appylar Sample App/Pods-Appylar Sample App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Appylar Sample App/Pods-Appylar Sample App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B932B6F5E27972A180DC35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Appylar Sample App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED276EFA2A41742C0038B0C8 /* Sources */ = {
@@ -259,6 +320,7 @@
 		};
 		ED276F122A41742F0038B0C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 788E8479713486296D14F033 /* Pods-Appylar Sample App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +352,7 @@
 		};
 		ED276F132A41742F0038B0C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0227796E39B05988118B11E7 /* Pods-Appylar Sample App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
