@@ -4,6 +4,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var bannerView = BannerView()
     @State private var isInterstitialShown = false
+    @State private var isHidden = false
     
     var body: some View {
         GeometryReader { _ in
@@ -30,6 +31,9 @@ struct ContentView: View {
                         // Create buttons
                         Button(action: {
                             if bannerView.canShowAd() {
+                                if bannerView.isHidden {
+                                    bannerView.isHidden.toggle()
+                                }
                                 bannerView.showAd()
                             }
                         }) {
@@ -38,6 +42,9 @@ struct ContentView: View {
 
                         Button(action: {
                             bannerView.hideAd()
+                            if !bannerView.isHidden {
+                                bannerView.isHidden.toggle()
+                            }
                         }) {
                             setButtonStyle(title: "Hide Banner")
                         }
@@ -52,7 +59,7 @@ struct ContentView: View {
                     }.frame(maxWidth: .infinity, maxHeight: .infinity)
 
                     // Place the banner view container at the bottom of the screen
-                    BannerViewContainer(bannerView: bannerView)
+                    BannerViewContainer(isHidden: isHidden, bannerView: bannerView)
                         .frame(height: 50)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -87,15 +94,17 @@ struct InterstitialViewContainer: UIViewControllerRepresentable {
 
 // Set the container where the banners will be shown
 struct BannerViewContainer: UIViewRepresentable {
+    let isHidden: Bool
     let bannerView: BannerView
     
     func makeUIView(context: Context) -> UIView {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
-        //bannerView.backgroundColor = UIColor.red
         return bannerView
     }
 
-    func updateUIView(_ uiView: UIView, context: Context) {}
+    func updateUIView(_ uiView: UIView, context: Context) {
+        uiView.isHidden = isHidden
+    }
 }
 
 // Set notification to be able to detect when the interstitials are closed
