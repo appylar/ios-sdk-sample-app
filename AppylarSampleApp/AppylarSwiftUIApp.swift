@@ -3,12 +3,10 @@ import SwiftUI
 
 @main
 struct AppylarSampleApp: App {
+    
     init() {
+
         // Set event listener before initialization
-        /* Example: AppylarManager.setEventListener(delegate: self, bannerDelegate: self) // For Banner Ads only
-                    AppylarManager.setEventListener(delegate: self, interstitialDelegate: self) // For Interstitial Ads only
-                    AppylarManager.setEventListener(delegate: self, bannerDelegate: self, interstitialDelegate: self) // For Both Ads
-         */
         AppylarManager.setEventListener(delegate: self, bannerDelegate: self, interstitialDelegate: self)
 
         // Initialize
@@ -23,23 +21,37 @@ struct AppylarSampleApp: App {
             "age_restriction": ["12"]
         ])
     }
-
+        
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(AppState.shared)
         }
     }
 }
 
+class AppState: ObservableObject {
+    static let shared = AppState()
+    @Published var statusText: String? = "Initializing the SDK, please wait..."
+    private init() {}
+}
+
 extension AppylarSampleApp: AppylarDelegate {
+    
     // Event listener triggered at successful initialization
     func onInitialized() {
         print("onInitialized")
+        DispatchQueue.main.async {
+            AppState.shared.statusText = "The SDK is initialized."
+        }
     }
 
     // Event listener triggered if an error occurs in the SDK
     func onError(error: String) {
         print("onError(): \(error)")
+        DispatchQueue.main.async {
+            AppState.shared.statusText = "Error: \(error)"
+        }
     }
 }
 
@@ -47,11 +59,17 @@ extension AppylarSampleApp: BannerViewDelegate {
     // Event listener triggered when a banner is shown
     func onBannerShown(_ height: Int) {
         print("onBannerShown(): \(height)")
+        DispatchQueue.main.async {
+            AppState.shared.statusText = ""
+        }
     }
 
     // Event listener triggered when there are no banners to show
     func onNoBanner() {
         print("onNoBanner()")
+        DispatchQueue.main.async {
+            AppState.shared.statusText = "No more banners in the buffer,\nplease retry again after a minute."
+        }
     }
 }
 
@@ -59,15 +77,24 @@ extension AppylarSampleApp: InterstitialDelegate {
     // Event listener triggered when an interstitial is shown
     func onInterstitialShown() {
         print("onInterstitialShown()")
+        DispatchQueue.main.async {
+            AppState.shared.statusText = ""
+        }
     }
 
     // Event listener triggered when an interstitial is closed
     func onInterstitialClosed() {
         print("onInterstitialClosed()")
+        DispatchQueue.main.async {
+            AppState.shared.statusText = ""
+        }
     }
 
     // Event listener triggered when there are no interstitials to show
     func onNoInterstitial() {
         print("onNoInterstitial()")
+        DispatchQueue.main.async {
+            AppState.shared.statusText = "No more interstitials in the buffer,\nplease retry again after a minute."
+        }
     }
 }

@@ -5,12 +5,11 @@ struct ContentView: View {
     @State private var bannerView = BannerView()
     @State private var isInterstitialShown = false
     @State private var isHidden = false
+    @EnvironmentObject var appState: AppState
     
     var body: some View {
         GeometryReader { _ in
-            // Check if interstitial should be shown...
             if isInterstitialShown {
-                // Place the interstitial view container and make it cover the whole screen
                 InterstitialViewContainer()
                     .onReceive(NotificationCenter.default.publisher(for: .interstitialClosed)) { _ in
                         isInterstitialShown = false
@@ -30,12 +29,12 @@ struct ContentView: View {
 
                         // Create buttons
                         Button(action: {
-                            if bannerView.canShowAd() {
+                            //if bannerView.canShowAd() {
                                 if bannerView.isHidden {
                                     bannerView.isHidden.toggle()
                                 }
                                 bannerView.showAd()
-                            }
+                            //}
                         }) {
                             setButtonStyle(title: "Show Banner")
                         }
@@ -50,12 +49,18 @@ struct ContentView: View {
                         }
 
                         Button(action: {
-                            if InterstitialViewController.canShowAd() {
+                            //if InterstitialViewController.canShowAd() {
                                 isInterstitialShown = true
-                            }
+                            //}
                         }) {
                             setButtonStyle(title: "Show Interstitial")
                         }
+
+                        Text(AppState.shared.statusText ?? "")
+                            .font(.footnote)
+                            .foregroundColor(Color(red: 0.16, green: 0.21, blue: 0.26))
+                            .padding()
+
                     }.frame(maxWidth: .infinity, maxHeight: .infinity)
 
                     // Place the banner view container at the bottom of the screen
@@ -125,12 +130,5 @@ class InterstitialView: InterstitialViewController {
         if Session.isInterstitialShown == false {
             NotificationCenter.default.post(name: .interstitialClosed, object: nil)
         }
-    }
-}
-
-// Set the preview
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
