@@ -29,12 +29,12 @@ struct ContentView: View {
 
                         // Create buttons
                         Button(action: {
-                            //if bannerView.canShowAd() {
+                            if bannerView.canShowAd() {
                                 if bannerView.isHidden {
                                     bannerView.isHidden.toggle()
                                 }
                                 bannerView.showAd()
-                            //}
+                            }
                         }) {
                             setButtonStyle(title: "Show Banner")
                         }
@@ -49,9 +49,9 @@ struct ContentView: View {
                         }
 
                         Button(action: {
-                            //if InterstitialViewController.canShowAd() {
+                            if InterstitialViewController.canShowAd() {
                                 isInterstitialShown = true
-                            //}
+                            }
                         }) {
                             setButtonStyle(title: "Show Interstitial")
                         }
