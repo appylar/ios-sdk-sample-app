@@ -68,7 +68,7 @@ extension AppylarSampleApp: BannerViewDelegate {
     func onNoBanner() {
         print("onNoBanner()")
         DispatchQueue.main.async {
-            AppState.shared.statusText = "No more banners in the buffer,\nplease retry again after a minute."
+            AppState.shared.statusText = "No banners in the buffer."
         }
     }
 }
@@ -94,7 +94,7 @@ extension AppylarSampleApp: InterstitialDelegate {
     func onNoInterstitial() {
         print("onNoInterstitial()")
         DispatchQueue.main.async {
-            AppState.shared.statusText = "No more interstitials in the buffer,\nplease retry again after a minute."
+            AppState.shared.statusText = "No interstitials in the buffer."
         }
     }
 }
