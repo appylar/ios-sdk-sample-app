@@ -17,8 +17,6 @@ struct ContentView: View {
                     .ignoresSafeArea(.all)
                     .frame(width: UIScreen.main.bounds.width)
                     .frame(height: UIScreen.main.bounds.height)
-
-                // ...or if the menu should be shown
             } else {
                 VStack {
                     VStack(spacing: 14) {
@@ -29,12 +27,12 @@ struct ContentView: View {
 
                         // Create buttons
                         Button(action: {
-                            if bannerView.canShowAd() {
+                            //if bannerView.canShowAd() {
                                 if bannerView.isHidden {
                                     bannerView.isHidden.toggle()
                                 }
                                 bannerView.showAd()
-                            }
+                            //}
                         }) {
                             setButtonStyle(title: "Show Banner")
                         }
@@ -49,9 +47,9 @@ struct ContentView: View {
                         }
 
                         Button(action: {
-                            if InterstitialViewController.canShowAd() {
+                            //if InterstitialViewController.canShowAd() {
                                 isInterstitialShown = true
-                            }
+                            //}
                         }) {
                             setButtonStyle(title: "Show Interstitial")
                         }
@@ -104,6 +102,7 @@ struct BannerViewContainer: UIViewRepresentable {
     
     func makeUIView(context: Context) -> UIView {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
+        bannerView.isOpaque = false
         return bannerView
     }
 
