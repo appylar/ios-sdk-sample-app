@@ -33,6 +33,7 @@ struct AppylarSampleApp: App {
 class AppState: ObservableObject {
     static let shared = AppState()
     @Published var statusText: String? = "Initializing the SDK, please wait..."
+    @Published var isInterstitialShown: Bool = false
     private init() {}
 }
 
@@ -85,6 +86,7 @@ extension AppylarSampleApp: InterstitialDelegate {
     // Event listener triggered when an interstitial is closed
     func onInterstitialClosed() {
         print("onInterstitialClosed()")
+        AppState.shared.isInterstitialShown = false
         DispatchQueue.main.async {
             AppState.shared.statusText = ""
         }

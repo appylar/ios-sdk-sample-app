@@ -1,16 +1,16 @@
 PODS:
-  - Appylar (2.3.6)
+  - Appylar (2.4.0)
 
 DEPENDENCIES:
-  - Appylar (~> 2.3.6)
+  - Appylar (~> 2.4.0)
 
 SPEC REPOS:
   trunk:
     - Appylar
 
 SPEC CHECKSUMS:
-  Appylar: 753aad69dfd12f4eaf3f943d40777d34e1dc6879
+  Appylar: 3c14e8842a01247cb9119db7078327d381cf4634
 
-PODFILE CHECKSUM: 288f5ea56a1b2da780536a1be28f6d72e271ad55
+PODFILE CHECKSUM: 77ef2a6b903c0a1cffe4c5c3e13ca7dffc4490b5
 
 COCOAPODS: 1.16.2

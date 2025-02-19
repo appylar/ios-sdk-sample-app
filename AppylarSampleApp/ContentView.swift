@@ -3,16 +3,15 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var bannerView = BannerView()
-    @State private var isInterstitialShown = false
     @State private var isHidden = false
     @EnvironmentObject var appState: AppState
     
     var body: some View {
         GeometryReader { _ in
-            if isInterstitialShown {
+            if AppState.shared.isInterstitialShown {
                 InterstitialViewContainer()
                     .onReceive(NotificationCenter.default.publisher(for: .interstitialClosed)) { _ in
-                        isInterstitialShown = false
+                        AppState.shared.isInterstitialShown = false
                     }
                     .ignoresSafeArea(.all)
                     .frame(width: UIScreen.main.bounds.width)
@@ -48,7 +47,7 @@ struct ContentView: View {
 
                         Button(action: {
                             //if InterstitialViewController.canShowAd() {
-                                isInterstitialShown = true
+                            AppState.shared.isInterstitialShown = true
                             //}
                         }) {
                             setButtonStyle(title: "Show Interstitial")
@@ -80,7 +79,6 @@ struct ContentView: View {
             .background(Color(red: 0.46, green: 0.56, blue: 0.73))
             .foregroundColor(.white)
             .cornerRadius(8.0)
-            .disabled(isInterstitialShown)
     }
 }
 
@@ -126,7 +124,7 @@ class InterstitialView: InterstitialViewController {
     }
 
     override func viewDidLayoutSubviews() {
-        if Session.isInterstitialShown == false {
+        if AppState.shared.isInterstitialShown == false {
             NotificationCenter.default.post(name: .interstitialClosed, object: nil)
         }
     }
